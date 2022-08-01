@@ -14,7 +14,7 @@
     <name>feignclient</name>
     <description>feignclient</description>
     <properties>
-        <java.version>18</java.version>
+        <java.version>11</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -26,6 +26,28 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-openfeign-core</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-httpclient</artifactId>
+            <version>11.8</version>
         </dependency>
     </dependencies>
 
@@ -39,3 +61,4 @@
     </build>
 
 </project>
+
