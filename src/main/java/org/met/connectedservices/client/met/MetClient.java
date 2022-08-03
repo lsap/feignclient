@@ -4,7 +4,8 @@ import org.met.connectedservices.client.model.MetResponse;
 
 import java.util.List;
 
-public interface UrlClient {
+public interface MetClient {
 
     List<MetResponse> getMet();
+
 }

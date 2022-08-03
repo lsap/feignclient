@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class Met {
 
-    private String url;
+    private Met url;
 
 }

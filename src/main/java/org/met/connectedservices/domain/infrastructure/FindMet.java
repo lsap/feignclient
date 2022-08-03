@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface FindMet {
 
-    List<MetResponse> getMet();
+    List<Met> getMet();
 
 }

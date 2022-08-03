@@ -12,13 +12,13 @@ import java.util.concurrent.Callable;
 
 @Component
 @RequiredArgsConstructor
-public class MetClientImpl implements UrlClient {
+public class MetClientImpl implements MetClient {
 
     private final MetFeignClient client;
 
     @Override
     public List<MetResponse> getMet() {
-        return unwrap(() -> client.getUrl());
+        return unwrap(client::getUrl);
     }
 
     @SneakyThrows

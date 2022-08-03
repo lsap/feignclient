@@ -1,6 +1,7 @@
 package org.met.connectedservices.client.met;
 
 import org.met.connectedservices.client.model.MetResponse;
+import org.met.connectedservices.client.model.MetResultWrapper;
 import org.met.connectedservices.config.FeignConfig;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
@@ -13,6 +14,6 @@ import java.util.List;
 public interface MetFeignClient {
 
     @GetMapping("/tme")
-    List<MetResponse> getUrl();
+    MetResultWrapper<List<MetResponse>> getUrl();
 
 }
