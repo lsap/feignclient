@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Locale;
 
 @RequiredArgsConstructor
 @RestController
@@ -17,7 +16,7 @@ public class MetController {
     private final MetPort port;
 
     @GetMapping("/met")
-    List<MetResponse> getUrl(@RequestParam(value = "locale", required = false) Locale locale) {
-        return port.getUrl();
+    String getUrl() {
+        return "https://www.toyota.co.uk";
     }
 }
