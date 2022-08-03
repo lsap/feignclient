@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @EnableFeignClients
 @SpringBootApplication
-public class FeignclientApplication {
+public class FeignClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FeignclientApplication.class, args);
+        SpringApplication.run(FeignClientApplication.class, args);
     }
 
 }
